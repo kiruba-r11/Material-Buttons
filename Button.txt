@@ -1,0 +1,41 @@
+- Allows users to take actions and make choices with a single tap.
+
+- Types:
+	1. Text Buttons (low emphasis)
+	2. Outlined Buttons (medium emphasis)
+	3. Contained Buttons (high emphasis) -> Default
+
+- Elements:
+	1. Text Label
+	2. Container
+	3. Leading Icon (optional)
+
+- Attribute:
+	1. Text Label:
+		1.1 All attributes related to text
+	2. Container:
+		2.1. backgroundTint -> to set the background color of button
+		2.2. app:strokeColor -> to set the outline color of the button
+		2.3. app:strokeWidth -> to set the outline width of the button
+		2.4. app:rippleColor -> to set the color when the button is clicked
+	3. Icon:
+		3.1. app:icon -> to set a icon
+		3.2. app:iconSize -> to set the size of a icon
+		3.3. app:iconTint -> to set the color of a icon
+		3.4. app:iconpadding -> to set the space between text label and icon
+		3.5. app:iconGravity -> positioning the icon
+			 3.5.1. start or textStart
+			 3.5.2. end or textEnd
+			 3.5.3. textTop
+	4. Style: 
+		4.1. style = "Widget.MaterialComponents.Button.TextButton"
+		4.2. style = "Widget.MaterialComponents.Button.OutlinedButton"
+		4.3. style = "Widget.MaterialComponents.Button" -> since, this is default type
+
+- Listeners:
+	button.setOnClickListener {
+		// Responds to a button click
+	}
+
+- Dependancy:
+	implementation "com.google.android.material:material:1.4.0-alpha01"
